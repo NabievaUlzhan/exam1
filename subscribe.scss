@@ -1,0 +1,178 @@
+.subscribe{
+    position: relative;
+}
+.subscribe__all{
+    width: 1356px;
+    height: 490px;
+    margin-top: 124px;
+    margin-left: 48px;
+    margin-bottom: 96px;
+    position: relative;
+    padding-top: 13px;
+    @media screen and (max-width: 412px) {
+        width: 412px;
+        height: 550px;
+        margin-left: 0;
+        margin: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+}
+.subscribe__decore{
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    bottom: 0;
+    width: 153px;
+    height: 166px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    @media screen and (max-width: 412px){
+        display: none;
+    }
+}
+.subscribe__all-logo{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 79px;
+    @media screen and (max-width: 412px){
+        right: 0;
+    }
+}
+.subscribe__background{
+    width: 1257px;
+    height: 407px;
+    padding-left: 87px;
+    position: relative;
+    @media screen and (max-width: 412px) {
+        width: 412px;
+        height: 550px;
+        margin: auto;
+        padding-left: 0;
+    }
+}
+.subscribe__bg-decore{
+    width: 1170px;
+    height: 407px;
+    border-radius: 129px 20px 20px 20px;
+    opacity: 0.2;
+    background: var(--light-color, #DFD7F9);
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 412px) {
+        width: 380px;
+        height: 550px;
+        margin-left: 15px;
+    }
+}
+.subscribe__bg-circle1{
+    width: 264px;
+    height: 351.522px;
+    border-radius: 0px 24px 0px 50px;
+    border: 1px solid var(--2nd, #6246E5);
+    background: linear-gradient(202deg, #747DEF 10.27%, #5E3BE1 100%);
+}
+.subscribe__bg-circle2{
+    width: 361px;
+    height: 480px;
+    transform: rotate(90deg);
+    border: 1px solid var(--2nd, #6246E5);
+    background: linear-gradient(202deg, #747DEF 10.27%, #5E3BE1 100%);
+}
+
+.subscribe__all-text{
+    position: absolute;
+    z-index: 1;
+    width: 1170px;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 412px) {
+        width: 350px;
+        height: 400px;
+        margin: auto;
+        margin-top: 70px;
+    }
+    h4{
+        width: 881px;
+        text-align: center;
+        position: relative;
+        @include text($font-main-color, $font-family-main, 33px, normal, 600, 54px, normal);
+        margin-bottom: 74px;
+        @media screen and (max-width: 412px) {
+            width: 330px;
+            @include text($font-main-color, $font-family-main, 25px, normal, 600, 45px, normal);
+        }
+    }
+    
+}
+.subscribe__text-btns{
+    margin: auto;
+    width: 625px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 412px) {
+        width: 350px;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        // margin-left: 60px;
+    }
+    input{
+        width: 421px;
+        height: 68px;
+        border-radius: 10px;
+        border: none;
+        background: $font-button-color;
+        padding-left: 66px;
+        @include text($font-email-color, $font-family-once, 14px, normal, 400, normal, normal);
+        position: relative;
+        @media screen and (max-width: 412px) {
+            width: 350px;
+            height: 55px;
+        }
+    }
+    button{
+        width: 180px;
+        height: 68px;
+        border-radius: 10px;
+        border: none;
+        margin-left: 24px;
+        background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
+        @include text($font-button-color, $font-family-list, 17px, normal, 600, normal, normal);
+        position: relative;
+        transition: 0.4s;
+        @media screen and (max-width: 412px) {
+            height: 55px;
+            // margin-left: 0;
+        }
+    }
+}
+.subscribe__text-center{
+    
+    @media screen and (max-width: 412px) {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+    }
+}
+.subscribe__text-btn:hover{
+    background-color: #000000;
+}
+.subscribe__text-btns input::before{
+    content: '';
+    background-image: url(../../images/subscribe/email.svg);
+    width: 21px;
+    height: 18px;
+    position: absolute;
+    z-index: 3;
+    right: 14px;
+}
